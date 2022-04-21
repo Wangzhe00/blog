@@ -1,12 +1,4 @@
 #!/usr/bin/env sh
-###
- # @Description: 
- # @Author: Wangzhe
- # @Date: 2022-04-20 12:59:26
- # @LastEditors: Wangzhe
- # @LastEditTime: 2022-04-20 16:25:45
- # @FilePath: \vuepress-theme-vdoing\deploy.sh
-### 
 
 # 确保脚本抛出遇到的错误
 set -e

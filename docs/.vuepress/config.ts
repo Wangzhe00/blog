@@ -27,42 +27,40 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
-        link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        text: '笔记',
+        link: '/notee/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: '前端文章',
-            items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-            ],
-          },
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
-            ],
-          },
+           { 
+                text: '语言篇', 
+                items: [
+                    { text: 'C', link: '/pages/e0563f9ce5/' },
+                    { text: 'C++', link: '/pages/1f03f7c5c5/' },
+                    { text: 'C#', link: '/pages/a226d2479/' },
+                    { text: 'Python', link: '/pages/4b8412da01/' },
+                    { text: 'Verilog', link: '/pages/e786683a/' },
+                ]
+            },
+            { 
+                text: '必备篇', 
+                items: [
+                    { text: 'Git', link: '/pages/6bc44363f/' },
+                    { text: 'Linux', link: '/pages/4966108b8/' },
+                    { text: '环境搭建', link: '/pages/3e24c999a4/' },
+                ]
+            },
+            { 
+                text: '企业篇', 
+                items: [
+                    { text: 'WLAN', link: '/pages/e0563f9ce5/' }
+                ]
+            },
+            { 
+                text: 'Evan\'s', 
+                items: [
+                    { text: 'OtherBlog', link: '/EvanBlog/' }
+                ]
+            },
         ],
       },
       {
@@ -156,15 +154,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi', // 可选的
+      name: 'wangzhe', // 必需
+      link: 'https://github.com/Wangzhe00', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
       avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      name: 'Sum',
+      slogan: '有苦吗我有时间',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -174,17 +172,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:wangzhe8889@163.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/Wangzhe00/blog',
         },
         {
           iconClass: 'icon-erji',
           title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          link: 'https://music.163.com/#/user/home?id=1664786110',
         },
       ],
     },
@@ -193,14 +191,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2019, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
+        'Sum | <a href="https://github.com/Wangzhe00/blog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
+      date: '2022-4-21 13:20:27',
       author: {
-        name: 'xugaoyi',
-        link: 'https://github.com/xugaoyi'
+        name: 'wangzhe',
+        link: 'https://github.com/Wangzhe00/blog'
       }
     },
 

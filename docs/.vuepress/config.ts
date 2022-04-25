@@ -50,9 +50,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 ]
             },
             { 
-                text: '企业篇', 
+                text: '工作专项', 
                 items: [
-                    { text: 'WLAN', link: '/pages/e0563f9ce5/' }
+                    { text: 'WLAN从入门到精通 Wi-Fi 6', link: '/pages/4d1833/' },
+                    { text: '企业WLAN架构与技术', link: '/pages/4d1833/' }
+                ]
+            },
+            { 
+                text: 'Games', 
+                items: [
+                    { text: 'CSGO', link: '/pages/124206/' },
                 ]
             },
             { 
@@ -196,7 +203,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
-      date: '2022-4-21 13:20:27',
+      date: '2022-4-25 17:22:45',
       author: {
         name: 'wangzhe',
         link: 'https://github.com/Wangzhe00/blog'

@@ -167,7 +167,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+      avatar: 'https://cdn.jsdelivr.net/gh/Wangzhe00/image-hosting/blog/sum.png',
       name: 'Sum',
       slogan: '有苦吗我有时间',
     },
@@ -211,7 +211,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     },
 
     // 自定义hmtl(广告)模块
-    htmlModules
+    // htmlModules
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]

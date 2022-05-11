@@ -11,12 +11,12 @@ len=${#id[*]}
 
 for (( i=0; i<$len; i=i+1 )); do
     t=${id[i]}
-    if [ -n "${!t}" ]; then
-        sed -i "s/${id[i]}/${!t}/g" ${dirs[i]}
-        echo "success fill in $t in ${dirs[i]}"
-    else
+    if [ -z "${!t}" ]; then
         echo "can't find $t env or ${dirs[i]} dir"
         exit 1
+    else
+        sed -i "s/${id[i]}/${!t}/g" ${dirs[i]}
+        echo "success fill in $t in ${dirs[i]}"
     fi
 done
 

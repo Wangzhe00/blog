@@ -3,31 +3,6 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-id=("BAIDU_PUSH_TOKEN" "GITTALK_COMMENT_CLIENTID" "GITTALK_COMMENT_CLIENT_SECRET")
-
-dirs=("baiduPush.sh" "./docs/.vuepress/config.ts" "./docs/.vuepress/config.ts")
-
-len=${#id[*]}
-
-if [ -z "$BAIDU_PUSH_TOKEN" ]; then
-  echo "can't find $t env"
-  exit 1
-else
-  sed -i "s/BAIDU_PUSH_TOKEN/$BAIDU_PUSH_TOKEN/g" baiduPush.sh
-  echo "success fill in BAIDU_PUSH_TOKEN in baiduPush.sh"
-fi
-
-for (( i=0; i<$len; i=i+1 )); do
-  t=${id[i]}
-  if [ -z "${!t}" ]; then
-    echo "can't find $t env or ${dirs[i]} dir"
-    exit 1
-  else
-    sed -i "s/${id[i]}/${!t}/g" ${dirs[i]}
-    echo "success fill in $t in ${dirs[i]}"
-  fi
-done
-
 ./fill-in-keys.sh
 
 # 生成静态文件

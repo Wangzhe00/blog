@@ -1,13 +1,8 @@
 #!/usr/bin/env sh
 
-id=("BAIDU_PUSH_TOKEN"
-    "GITTALK_COMMENT_CLIENTID"
-    "GITTALK_COMMENT_CLIENT_SECRET")
+id=("BAIDU_PUSH_TOKEN" "GITTALK_COMMENT_CLIENTID" "GITTALK_COMMENT_CLIENT_SECRET")
 
-dirs=(
-    "baiduPush.sh"
-    "docs\.vuepress\config.ts"
-    "docs\.vuepress\config.ts")
+dirs=("baiduPush.sh" "docs\.vuepress\config.ts" "docs\.vuepress\config.ts")
 
 len=${#id[*]}
 

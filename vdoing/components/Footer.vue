@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2022-07-01 16:00:42
+ * @LastEditors: Wangzhe
+ * @LastEditTime: 2022-07-07 15:17:52
+ * @FilePath: \blog\vdoing\components\Footer.vue
+-->
 <template>
   <div class="footer">
     <div class="icons" v-if="social && social.icons">
